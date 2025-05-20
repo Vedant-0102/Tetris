@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Tetris
 
 A classic Tetris game built with React and Vite, featuring responsive design for both desktop and mobile play. Control falling blocks, clear lines, and aim for a high score in this modern implementation of the iconic puzzle game.
