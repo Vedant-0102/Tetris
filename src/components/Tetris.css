@@ -1,0 +1,57 @@
+.Tetris {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 980px) {
+  .Tetris {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .GameStats__right {
+    position: relative;
+    transform: none;
+    margin-top: 20px;
+    width: 90vw;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Tetris {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Tetris {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Tetris {
+    padding: 5px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 206, 201, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 206, 201, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 206, 201, 0.5);
+  }
+}

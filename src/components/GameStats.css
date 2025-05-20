@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.GameStats {
+  position: absolute;
+  width: 22vh;
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 1.5rem;
+  background: rgba(32, 32, 42, 0.9);
+  border: 4px solid #30336b;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.GameStats__right {
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.GameStats li {
+  font-size: 1.5vh;
+  margin-bottom: 0.5rem;
+  color: #00cec9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.GameStats .value {
+  font-size: 2.8vh;
+  color: #fd79a8;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(253, 121, 168, 0.5);
+}
+
+.GameStats {
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 206, 201, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(253, 121, 168, 0.5);
+  }
+}
+
+@media (max-width: 1200px) {
+  .GameStats__right {
+    right: 8%;
+  }
+}
+
+@media (max-width: 980px) {
+  .GameStats {
+    width: 85vw;
+    max-width: 350px;
+    padding: 1.2rem;
+  }
+  
+  .GameStats__right {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 15px auto;
+  }
+  
+  .GameStats li {
+    font-size: 14px;
+  }
+  
+  .GameStats .value {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .GameStats {
+    padding: 1rem;
+    border-width: 3px;
+    margin: 10px auto;
+  }
+  
+  .GameStats li {
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+  
+  .GameStats .value {
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+  }
+}
